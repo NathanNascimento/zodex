@@ -92,10 +92,8 @@ h1.saint_data {
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: justify;
-    /* os tres comandos abaixo coloca duas cores nas letras */
-    background-image: linear-gradient(to top, rgb(238, 247, 0), rgb(0, 255, 251), rgb(0, 0, 193));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   /* Os comandos abaixo muda a cor da letra da pokedex */
+   color: yellow;
 
 }
 
