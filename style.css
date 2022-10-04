@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+
+
+}
+
+body {
+    /* alinha minha pokedex no meio da tela */
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+    
+
+}
+
+main {
+
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    /* position: relative respeita os elementos ficarem em cima da pokedex */
+    position: relative;
+    /* tira a barra de rolagem da pagina */
+    max-width: 20vw;
+    min-width: 350px;
+
+}
+
+.pokedex {
+
+    width: 100%;
+    /* max-width serve para colocar meu cavaleiro ao lado da pokedex */
+    max-width: 425px;
+
+}
+
+.saint_image {
+    /* position: absolute serve para deixar a imgaem do cavaleiro em cima da pokedex */
+    position: absolute;
+    bottom: 55%;
+    left: 55%;
+    /* transform:translate pega meu cavaleiro e coloca ele no centro da pokedex */
+    transform: translate(-63%, 20%);
+    /* Essas medidas abaixo mudam o tamanho do cavaleiro no centro da pokedex */
+    height: 30%;
+    width: 60%;
+}
+
+h1.saint_data {
+
+    /* position: absolute; deixa os nomes dentro da pokedex  */
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 48%;
+    right: 27%;
+    /* font-size: clamp(min, desejavel, maximo); serve p/ manter o tamanho da fonte desejavel com medidades de min, max, e o normal  */
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+
+/* aqui são as configurações do meu conteiner das informações dos cavaleiros */
+.paragrafo {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    font-size: 0.1.1vw;
+    position: absolute;
+    /* Deixa o texto no meio da pokedex */
+    margin-top: 80%;
+    margin-left: 14%;
+    display: flex;
+    /* Mantem o texto no centro da pokedex */
+    flex-direction: column;
+    width: 0.3px;
+
+}
+
+.p1 {
+
+    font-size: 70%;
+    /* deixa o texto responsivo na pokedex */
+    max-width: 20vw;
+    min-width: 350px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: justify;
+    /* os tres comandos abaixo coloca duas cores nas letras */
+    background-image: linear-gradient(to top, rgb(238, 247, 0), rgb(0, 255, 251), rgb(0, 0, 193));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.p2 {
+    font-size: 70%;
+    max-width: 20vw;
+    min-width: 350px;
+    text-align: start;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* os tres comandos abaixo coloca duas cores nas letras */
+    background-image: linear-gradient(to right, rgb(246, 255, 0), rgb(39, 7, 144), blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+span.saint_name {
+    color: #3a444d;
+    /* text-transform: capitalize; deixa somente a primeira letra do nome em Maiusculo */
+    text-transform: capitalize;
+
+}
+
+.buttons {
+    position: absolute;
+    bottom: 7.5%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    /* display: flex; deixa os botões um do lado do outro */
+    display: flex;
+    /* gap: 10px;  faz um espaço entre os botões */
+    gap: 10px;
+
+}
+
+.button {
+
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px #222, -4px 6px 0 #000;
+
+}
+
+/* isso serve para deixar em azul ao clicar nos botões, simulando um clique de seleção se vc clicar e segurar vai perceber isso */
+.button:active {
+
+    box-shadow: inset -4px 4px 0 #222;
+    background-color: rgb(39, 24, 122);
+    font-size: 0.9rem;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+footer {
+
+    background-color: rgb(114, 114, 220);
+    color: white;
+
+}
+
+
+.resumo
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 15%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.resumo-text
+{
+
+
+    background: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid rgb(51, 167, 178);
+    border-radius: 6px;
+}
+
+.text-rm a
+{
+  
+    color:#339393;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/* esse é o tamanho do meu texto dentro da pokedex */
+.resumo-text .text-rm
+{
+    padding: 2%;
+}
+
+
+/* esse é o tamanho do meu titulo dentro da pokedex */
+.resumo-text .resu-tittle
+{
+    
+    background: #25acc0;
+    border:10px solid #25acc0; 
+    border-radius: 6px 6px 0px 0px;
+    padding: 10px;
+}
+
+
+/* esse é o tamanho da fonte dentro da minha pokedex */
+.resumo-text .resu-tittle h3
+{
+   
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#mais
+{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    text-align: justify;
+    text-indent: 30px;
+    display: block;
+    display: none;
+    
+}
