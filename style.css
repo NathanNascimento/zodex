@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
+/* com essas propriedades eu reseto minha pagina para ir posicionando os conteudos dentro da minha pagina da maneira que eu quero */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
-
-
 }
 
+
+/* é o corpo da minha pagina  */
 body {
     /* alinha minha pokedex no meio da tela */
     text-align: center;
     background: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
     
-
 }
 
+
+/* é o conteudo da minha pagina onde desenvolvo todo o conteudo */
 main {
 
     display: inline-block;
@@ -31,6 +33,7 @@ main {
 
 }
 
+/* isso é uma classe para minha pokedex obedecer as proporções que dei a ela*/
 .pokedex {
 
     width: 100%;
@@ -39,6 +42,7 @@ main {
 
 }
 
+/* é uma classe para os videos ficarem no lugar correto dentro da pokedex */
 .saint_image {
     /* position: absolute serve para deixar a imgaem do cavaleiro em cima da pokedex */
     position: absolute;
@@ -51,6 +55,7 @@ main {
     width: 60%;
 }
 
+/* é o titulo que aparece na pokedex e numeração do mesmo */
 h1.saint_data {
 
     /* position: absolute; deixa os nomes dentro da pokedex  */
@@ -81,6 +86,7 @@ h1.saint_data {
 
 }
 
+/* aqui é uma classe para o meu paragrafo ficar no lugar correto na pagina e obedecer o tamanho correto da pokedex */
 .p1 {
 
     font-size: 70%;
@@ -97,7 +103,7 @@ h1.saint_data {
 
 }
 
-
+/* isso é uma outra classe para posicionar outro paragrafo na minha pagina e fazer um efeito de duas cores */
 .p2 {
     font-size: 70%;
     max-width: 20vw;
@@ -115,6 +121,7 @@ h1.saint_data {
 
 }
 
+/* mostra os numeros do meu cavaleiro de acordo quando clica no botão proximo */
 span.saint_name {
     color: #3a444d;
     /* text-transform: capitalize; deixa somente a primeira letra do nome em Maiusculo */
@@ -122,6 +129,7 @@ span.saint_name {
 
 }
 
+/* cria o conteiner para adicionar os botoões avançar e voltar */
 .buttons {
     position: absolute;
     bottom: 7.5%;
@@ -135,6 +143,7 @@ span.saint_name {
 
 }
 
+/* personaliza os botões dentro do conteiner criado */
 .button {
 
     width: 50%;
@@ -158,15 +167,17 @@ span.saint_name {
 
 }
 
+
+/* gera uma cor para o link criado na pagina */
 a {
     color: rgb(255, 255, 255);
 }
 
+/* cria um rodape no final da ultima pagina colocando os direitos autorias para eu que fiz a pagina */
 footer {
 
     background-color: rgb(114, 114, 220);
     color: white;
-
 }
 
 
@@ -179,10 +190,9 @@ footer {
     font-size: 16px;
 }
 
+/* isso é para minha pokedex 2.0 que está em produção */
 .resumo-text
 {
-
-
     background: #ffffff;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -192,6 +202,7 @@ footer {
     border-radius: 6px;
 }
 
+/* serve para adicionar na nova pokedex 2.0 que estou criando */
 .text-rm a
 {
   
@@ -207,17 +218,14 @@ footer {
     padding: 2%;
 }
 
-
 /* esse é o tamanho do meu titulo dentro da pokedex */
 .resumo-text .resu-tittle
 {
-    
     background: #25acc0;
     border:10px solid #25acc0; 
     border-radius: 6px 6px 0px 0px;
     padding: 10px;
 }
-
 
 /* esse é o tamanho da fonte dentro da minha pokedex */
 .resumo-text .resu-tittle h3
@@ -228,9 +236,8 @@ footer {
     font-size: 18px;
 }
 
-#mais
-{
-
+/* serve para adicionar na pokedex 2.0 que ainda está em produção, decidi não deixar comentado para apresentar melhor vizualição dos comandos */
+#mais {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -238,5 +245,4 @@ footer {
     text-indent: 30px;
     display: block;
     display: none;
-    
 }
